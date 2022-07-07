@@ -1,0 +1,56 @@
+.app {
+  width: 500px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: #e5eeea;
+  padding: 10px;
+  position: relative;
+  border-radius: 7px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.input {
+  outline: #3d87f7;
+  position: relative;
+  width: 70%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 7px;
+  margin: 0 5px;
+  box-sizing: border-box;
+  border: 2px solid #00203f;
+  width: 400px;
+}
+form button {
+  background-color: #00203f;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 17%;
+  height: 39px;
+}
+.input-icon {
+  position: absolute;
+  left: 50px;
+}
+.no-items h1 {
+  color: #00203f;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.title {
+  color: white;
+  width: fit-content;
+  font-size: 30px;
+  position: relative;
+  top: 40px;
+  margin: 0 auto;
+}

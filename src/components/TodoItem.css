@@ -1,0 +1,93 @@
+.item,
+.item.completed {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto 30px auto;
+  padding: 5px;
+  position: relative;
+  width: 95%;
+  box-sizing: border-box;
+  border-radius: 7px;
+  min-height: 45px;
+  text-transform: uppercase;
+}
+.item {
+  color: white;
+  background-color: #00203f;
+  animation: item 0.7s forwards ease;
+}
+@keyframes item {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.item.completed {
+  color: rgb(186, 186, 186);
+  background-color: #262d37;
+}
+
+.todo-text {
+  width: 100%;
+  font-size: 18px;
+  text-align: start;
+  margin: 0 0 0 10px;
+}
+.show-icons {
+  font-size: 30px;
+  cursor: pointer;
+}
+.icons {
+  background-color: white;
+  position: absolute;
+  right: 5px;
+  z-index: 1;
+  bottom: 8px;
+  width: 80px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px;
+  animation: show 0.3s forwards ease;
+  display: flex;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.icons svg {
+  color: #00203f;
+  display: block;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.icon-menu {
+  display: inline-block;
+  width: fit-content;
+}
+.clock {
+  display: block;
+  background-color: #aaaaaa;
+  position: absolute;
+  width: 100%;
+  color: #00203f;
+  font-weight: 600;
+  bottom: -20px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  text-align: start;
+  padding: 3px 0 3px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
